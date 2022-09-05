@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+</head>
+<body>
+   <h1>CSS in Depth</h1>
+   <p>The third ruleset here overrides the blue link color, giving the link in the footer a cascaded value of inherit</p>
+    
+   <!-- <form action="/action_page.php" autocomplete="on" method="post">
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="firstname" name="firstname" value="firstname" autocomplete="on">
+    
+    <br>
+    <br>
+    <label for="lastname">Lastname:</label>
+    <input type="text" id="lastname" name="lastname" value="lastname" autocomplete="on">
+    <!-- <p>Choose your favourite language from the Languages below:</p> -->
+    <!-- <label for="html">HTML</label>
+    <input type="radio" id="html" name="html" value="HTML">
+    <br>
+    <br>
+
+    <label for="css">CSS</label>
+    <input type="radio" id="css" name="css" value="CSS">
+
+    <br>
+    <br>
+
+    <label for="javascript">Javascript</label>
+    <input type="radio" id="javascript" name="javascript" value="Javascript">
+    <br>
+    <br>
+
+    <label for="sql">SQL</label>
+    <input type="radio" id="sql" name="sql" value="SQL">
+    <br>
+    <br>
+
+    <input type="submit" value="submit">
+   </form> --> 
+   <p>Please select your favourite language from the languages provided below:</p>
+   <form action="contact.html">
+    <label for="css">CSS</label>
+    <input type="radio" id="css" name="favourite_lang" value="CSS">
+    <br>
+    <br>
+
+    <label for="html">HTML</label>
+    <input type="radio" id="html" name="favourite_lang" value="HTML">
+    <br>
+    <br>
+
+    <label for="javascript">Javascript</label>
+    <input type="radio" id="javascript" name="favourite_lang" value="Javascript">
+   </form>
+
+   <form>
+    <label for="car">Choose a car</label>
+    <select id="car" name="car" size="3" multiple>
+      <option value="Toyota">Toyota</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="BMW">BMW</option>
+      <option value="Tesla">Tesla</option>
+    </select>
+   </form>
+
+   <textarea name="message" rows="10" cols="30" >Type in the box</textarea>
+  <input type="submit" value="Submit">
+
+  <form action="action_page.php">
+
+    <fieldset>
+      <legend>Personal</legend>
+      <label for="firstname">Firstname:</label>
+      <input type="text" name="firstname" id="firstname" value="firstname">
+<br>
+<br>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" value="surname">
+    <br>
+    <br>
+    <input type="submit" value="Submit">  
+    </fieldset>
+  </form>
+
+  <form action="action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">Internet Explorer</option>
+      <option value="Google Chrome">Google Chrome</option>
+      <option value="Firefox">Firefox</option>
+    </datalist>
+
+  </form>
+
+  <form action="action_page.php">
+    <label for="best_color">What is your best colour:</label>
+    <input type="color" id="best_color" name="best_color">
+
+    <br>
+    <br>
+    <label for="date_of_birth">Date of Brith:</label>
+    <input type="date" name="date_of_birth" id="date_of_birth">
+
+    <br>
+    <br>
+
+    <label for="date_time">Local date and time:</label>
+    <input type="datetime-local" id="date_time" name="date_time">
+    <br>
+    <br>
+
+    <label for="user_email">Enter your E-mail:</label>
+    <input type="email" id="user_email" name="user_email">
+    <input type="hidden" id="user_fig" name="user_fig" value="39655">
+
+    <br>
+    <br>
+    
+    <label for="your_file">Upload File:</label>
+    <input type="file" id="your_file" name="your_file">
+
+    <label for="user_image">Upload Image</label>
+    <input type="image" id="user_image" name="user_image" >
+    <input type="reset">
+    <br>
+    <br>
+
+    <label for="bdaymonth">Birthday (Month and Year)</label>
+    <input type="month" id="bdaymonth" name="bdaymonth">
+    <label for="quantity">Quantity(between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </form>
+
+  <form action="action_page.php">
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="firstname" name="firstname" value="Enter firstname" >
+    <br>
+    <br>
+    <label for="html">HTML</label>
+    <input type="radio" id="html" name="html" value="HTML"  >
+
+
+  </form>
+
+  <form action="action_page.php">
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+
+
+    <label for="vol">Volume</label>
+    <input type="range" id="vol" name="vol" min="0" max="50" >
+  </form>
+
+  <form action="action_page.php">
+    <label for="gsearch">Search</label>
+    <input type="search" id="gsearch" name="gsearch">
+    <br>
+    <br>
+    <label for="phone_num">Enter your phone number:</label>
+    <input type="tel" id="phone_num" name="phone_num" pattern="+2348180189842">
+  
+    <label for="user_time">Select a time:</label>
+    <input type="time" id="user_time" name="user_time">
+
+    <br>
+    <br>
+    <label for="user_url">Add your homepage</label>
+    <input type="url" id="user_url" name="user_url">
+    
+  
+  
+  
+  </form>
+
+   <footer class="footer">
+    &copy; Wombat Coffee Roasters &mdash;
+    <a href="/">Terms of Use</a>
+
+   </footer>
+   
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* /* table, th, td{
+    border: 0.1em solid;
+    
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: left;
+}
+
+tr:hover{
+    background-color: blueviolet;
+}
+
+th, td{
+    padding: 0.5em;
+
+} */
+
+/* table,th,td{
+    border: 0.1em solid;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border-bottom: 0.1em solid #a368a3;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th{
+    background-color: #04AA6D;
+    color: white;
+} */
+
+/* table,th,td{
+    border:0.1em solid;
+}
+
+table{
+    width: 100%;
+    border-collapse: collaphiddense;
+    overflow:auto;
+}
+
+th, td{
+    padding: 1em;
+}
+
+tr:hover{
+    background-color: blue;
+}
+
+th{
+    background-color: #03af03;
+    color: white;
+}
+
+li{
+    display: inline;
+    padding: 0.5em;
+    border: 0.1em solid;
+    background-color: #03af03;
+    color: white;
+}
+
+nav{
+margin-left: 10em;
+margin-right: 10em;
+}
+a{
+    color: white;
+}  */
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+h2.left{
+    text-align: center;
+    color: rgb(165, 31, 31);
+}
+
+.left{
+    width: 25%;
+
+}
+
+.middle{
+    width: 25%;
+    display: none;
+}
+
+.right{
+    width: 25%;
+}
+
+p{
+    position: fixed;
+    top: 0;
+    right:0;
+    border: 0.1em solid green;
+}
+
+/* .container{
+    position: relative;
+    border: 0.2em solid green;
+} */
+
+.sticky{
+    position: sticky;
+    top: 0;
+    border: 0.2em solid green;
+    background-color: rgb(76, 155, 76);
+    color: black;
+}
+
+/* .index{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+.pineapple{
+    float: left;
+}

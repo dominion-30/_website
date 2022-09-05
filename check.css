@@ -1,0 +1,116 @@
+/* .fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: 0.2em solid green;
+}
+li{
+    list-style-type: none;
+    width: 10em;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+.button a{
+   
+    color: white;
+    
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.dropdown a{
+    color: black;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.button{
+    
+    background-color: green;
+    
+    border-radius: 0.2em;
+
+}
+
+.dropdown{
+    background-color: white;
+    display:none;
+    
+}
+
+ul:hover .dropdown{
+    display: block;
+} */
+
+
+.left, .right{
+    
+    background-color: green;
+    
+    border-radius: 0.3em;
+
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+.left_side{
+    
+    position: fixed;
+    left: 2em;
+    top: 0.5em;
+}
+
+.right_side{
+
+    position: fixed;
+    right: 2em;
+    top: 0.5em;
+
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    width: 5em;
+    text-align: center;
+    padding: 0.5em;
+}
+.button{
+    display: none;
+
+    background-color: white;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+.left a{
+    color: white;
+}
+
+.right a{
+    color: white;
+}
+
+.button a{
+    color: black;
+}
+
+ul:hover .button{
+    display: block;
+}
