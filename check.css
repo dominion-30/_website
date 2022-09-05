@@ -49,6 +49,8 @@ ul:hover .dropdown{
     display: block;
 } */
 
+/* 
+
 
 .left, .right{
     
@@ -114,3 +116,41 @@ a{
 ul:hover .button{
     display: block;
 }
+.image_container{
+    width: 100%;
+    overflow: hidden;
+   
+}
+div:hover img{
+    width: 50%;
+    border: 0.5em solid gray;
+} */
+
+.box{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    
+    display: flex;
+}
+div{
+    margin-left: 0.2em;
+}
+
+img{
+    width: 100%;
+    overflow: hidden;
+}
+div p{
+    text-align: center;
+}
+
+.image_border{
+    border: 0.2em solid gray;
+}
+
+/* a[target]{
+    background-color:yellow;
+} */
