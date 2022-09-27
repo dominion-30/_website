@@ -1,0 +1,36 @@
+.container{
+    background-color: lightgreen;
+    
+    width: 50vw;
+    height: 50vh;
+    border-radius: 1em;
+}
+
+div p{
+    color:white;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+}
+.other{
+    margin-top: 0.5em;
+
+    border: 0.1em solid green;
+    border-radius: 1em 2em 3em 4em;
+    width: max-content;
+}
+.other p{
+    color: black;
+}
+
+.image {
+    background-image: url("../img/img_left.jpg");
+}
+.ellipse{
+    margin-top: 1em;
+    width: auto;
+    height: auto;
+    background-color: gray;
+    border-radius: 3em 3em;
+    padding: 0.5em;
+}

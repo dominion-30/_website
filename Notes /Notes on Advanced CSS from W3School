@@ -1,0 +1,24 @@
+CSS ROUNDED CORNERS
+
+CSS ROUNDED CORNERS
+With the CSS border-radius property, you can give any element "rounded corners"
+
+CSS border-radius property
+
+The CSS border-radius property defines the radius of an element corners.
+
+Tip: This property allows you to add rounded corners to elements!
+
+Tip: The border-radius property is actually a shorthand property for the border-top-left radius, border-top-right-radius, border-bottom-right-radius and border-bottom-left-radius properties.
+
+CSS border-radius -Specify Each Corner.
+
+The border-radius property can have from one to four values. Here are the rules:
+
+Four values-border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner).
+
+Three values- border-radius: 15px 50px 30px; (first value applies to the top-left corner, the second value applies to the top-right and bottom-left corners and the third value applies to the bottom-right corner.
+
+Two values-border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to the top-right corner and bottom-left corner.)
+
+One value- border-radius: 15px( the value applies to all the four corners, which are rounded equally)
