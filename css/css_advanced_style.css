@@ -6,7 +6,7 @@
     border-radius: 1em;
 }
 
-div p{
+.container p{
     color:white;
     padding: 1em;
     font-size: 1em;
@@ -33,4 +33,21 @@ div p{
     background-color: gray;
     border-radius: 3em 3em;
     padding: 0.5em;
+}
+
+.media{
+    margin-top: 1em;
+    border: 0.5em solid transparent;
+    border-image: url(../img/border.png) 30 round;
+    padding: 15px;
+}
+.media p{
+    color: black;
+}
+
+.media-two{
+    margin-top: 1em;
+    border: 1em solid transparent;
+    border-image: url(../img/pineapple.jpg) 50 round;
+    padding: 1em;
 }

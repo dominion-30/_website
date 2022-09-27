@@ -22,3 +22,34 @@ Three values- border-radius: 15px 50px 30px; (first value applies to the top-lef
 Two values-border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to the top-right corner and bottom-left corner.)
 
 One value- border-radius: 15px( the value applies to all the four corners, which are rounded equally)
+
+CSS Border Images
+
+CSS Border Images
+
+With the CSS border-image property, you can set an image to be used as the border around an element.
+
+
+CSS border-image property
+
+The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+
+The property has three parts:
+1. The image to use as the border
+2. Where to slice the image
+3. Define whether the middle sections should be repeated or stretched.
+
+Note: The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the  corners at the corners, and the middle sections are repeated or stretched as you specify.
+
+FOR border-image to work, the element also needs the border property set!
+
+Here, the middle sections of the image are repeated to create the border:
+
+border: 0.5em solid transparent;
+border-image: url(path to image);
+padding: 0.5em;
+
+
+Here, the middle section of the image are stretched to create the border.
+
+Note: The border-image property is actually a shorthand property for the border-image-source, border-image slice, border-image-width, border-image-outset and border-image-repeat properties.
