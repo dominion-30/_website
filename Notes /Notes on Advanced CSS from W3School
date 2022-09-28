@@ -53,3 +53,77 @@ padding: 0.5em;
 Here, the middle section of the image are stretched to create the border.
 
 Note: The border-image property is actually a shorthand property for the border-image-source, border-image slice, border-image-width, border-image-outset and border-image-repeat properties.
+
+
+CSS Multiple Backgrounds
+
+In this chapter you will learn how to add multiple background images to one element.
+
+You will also learn about the following properties:
+background-size
+background-origin
+background-clip
+
+
+CSS Multiple Backgrounds
+
+CSS allows you to add multiple background images for an element, through the background-image property.
+
+The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.
+
+Specifying Multiple Backgrounds
+
+background-image: url("path to image"), url(path to image);/* both works*/
+background-position: left bottom, right top;
+background-repeat: no-repeat, no-repeat;
+
+Note: If you want to use the background shorthand, you have to first specify background-image, background-position and background-repeat for that image, before going to the next image.
+
+Note: Multiple background images can be specified using either the individual background properties(as above) or the background shorthand properly.
+
+
+CSS Background Size
+
+The CSS background-size property allows you to specify the size of background images.
+
+The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.
+
+<div class="test">
+
+</div>
+
+
+.test{
+border: 0.5em solid transparent;
+background-image: url(path to image);
+backgrounnd-position: left bottom;
+padding:0.2em;
+background-size:100px 50px;
+
+}
+
+
+The two other possible values for background-size are contain and cover.
+
+The contain Keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the properties of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.
+
+
+The cover keyword scales the background image so that the content area is completely covered by the background image(both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.
+
+
+Define Sizes of Multiple Background Images
+
+The background-size property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.
+
+
+Full Size Background Image
+Now we want to have a background image on a website that covers the entire browser window at all times.
+
+The requirements are as follows:
+
+Fill the entire page with the image(no white space)
+Scale image as needed
+Center image on page
+Do no cause scrollbars.
+
+The following example shows how to do it; use the <html> element (the <html> element is always at least the height of the browser window). Then set a fixed and centered background on it.

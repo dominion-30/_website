@@ -51,3 +51,43 @@
     border-image: url(../img/pineapple.jpg) 50 round;
     padding: 1em;
 }
+
+.background-image{
+    background-image: url(../img/pineapple.jpg), url(../img/border.png);
+    background-position: center, right bottom;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 50vh;
+
+}
+
+.test{
+    background: url(../img/img_left.jpg) left bottom no-repeat, url(../img/img_middle.jpg) center repeat;
+    width: 100vw;
+    height: 50vh;
+    background-size: 100px 60px;
+    background-repeat: no-repeat;
+}
+
+.big{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/img_left.jpg);
+    background-size: cover;
+    background-repeat: ;
+    background-color: yellow;
+}
+
+.home{
+    background: url(../img/border.png) left top no-repeat, url(../img/img_middle.jpg) left bottom no-repeat, url(../img/border.png) right top no-repeat;
+    background-size: 50px, 60px, auto;
+}
+
+html{
+    background-image: url(../img/img_left.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 5em;
+
+}
