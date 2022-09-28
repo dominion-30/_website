@@ -1,93 +1,40 @@
-.container{
-    background-color: lightgreen;
-    
-    width: 50vw;
-    height: 50vh;
-    border-radius: 1em;
+h1{
+    margin-bottom:0 ;
 }
-
-.container p{
-    color:white;
-    padding: 1em;
-    font-size: 1em;
-    font-weight: bold;
-}
-.other{
-    margin-top: 0.5em;
-
-    border: 0.1em solid green;
-    border-radius: 1em 2em 3em 4em;
-    width: max-content;
-}
-.other p{
-    color: black;
-}
-
-.image {
-    background-image: url("../img/img_left.jpg");
-}
-.ellipse{
-    margin-top: 1em;
-    width: auto;
-    height: auto;
-    background-color: gray;
-    border-radius: 3em 3em;
-    padding: 0.5em;
-}
-
-.media{
-    margin-top: 1em;
-    border: 0.5em solid transparent;
-    border-image: url(../img/border.png) 30 round;
-    padding: 15px;
-}
-.media p{
-    color: black;
-}
-
-.media-two{
-    margin-top: 1em;
-    border: 1em solid transparent;
-    border-image: url(../img/pineapple.jpg) 50 round;
-    padding: 1em;
-}
-
-.background-image{
-    background-image: url(../img/pineapple.jpg), url(../img/border.png);
-    background-position: center, right bottom;
-    background-repeat: no-repeat;
-    width: 50vw;
-    height: 50vh;
-
-}
-
-.test{
-    background: url(../img/img_left.jpg) left bottom no-repeat, url(../img/img_middle.jpg) center repeat;
-    width: 100vw;
-    height: 50vh;
-    background-size: 100px 60px;
-    background-repeat: no-repeat;
-}
-
-.big{
-    width: 100vw;
-    height: 50vh;
-    background-image: url(../img/img_left.jpg);
+.hero-image{
+    margin-top: 0;
+    background-image: url(../img/img_middle.jpg);
     background-size: cover;
-    background-repeat: ;
-    background-color: yellow;
-}
-
-.home{
-    background: url(../img/border.png) left top no-repeat, url(../img/img_middle.jpg) left bottom no-repeat, url(../img/border.png) right top no-repeat;
-    background-size: 50px, 60px, auto;
-}
-
-html{
-    background-image: url(../img/img_left.jpg);
     background-position: center;
-    background-size: cover;
-    position: absolute;
-    height: 5em;
+    height: 500px;
+    position: relative;
+    background-clip:content-box;
+    padding: 0.5em;
+    border:0.2em dotted yellow
+}
+div{
+    margin-top: 2em;
+    width: 50em;
+    height: 25em;
+    
+    
+}
+.color1{
+    background-color: hsl(360, 100%, 50%);
+    background-color: transparent;
+}
 
+.color2{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+.color3{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.color4{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.color5{
+    background-color: rgba(255, 0, 0, 1);
 }
