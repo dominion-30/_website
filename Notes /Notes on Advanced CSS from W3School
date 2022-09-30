@@ -512,3 +512,112 @@ The inset parameter changes the shadow from an outer shadow(outset) to an inner 
 #grad{
 box-shadow: 10px 10px 20px coral inset;
 }
+
+
+CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes.
+
+In this chapter you will learn about the following properties:
+text-overflow
+word-wrap
+word-break
+writing-mode
+
+CSS Text Overflow
+
+The CSS text-overflow property specifies how overflowed content that is not displayed showed be signaled to the user.
+
+It can be clipped:
+
+This is some long text that will
+
+or it can be rendered as an ellipsis(...):
+
+This is some long text that ...
+
+The CSS code is as follows:
+
+.test1{
+white-space: nowrap;
+width: 200px;
+border: 1px solid #000000;
+overflow:hidden;
+text-overflow:clip;
+
+
+.test2{
+white-space:nowrap;
+width: 200px;
+border: 1px solid black;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+
+The following example shows how you can display the overflowed content when hovering over the element:
+p.test1:hover{
+
+overflow:visible;
+}
+
+CSS Word Wrapping
+
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line.
+
+Note: If a word is too long to fit within an area, it expands outside:
+
+Allow long words to be able to be broken and wrap onto the next line:
+
+p{
+word-wrap:break-word;
+}
+
+
+CSS Word Breaking
+
+The CSS word-break property specifies line breaking rules.
+
+CSS Writing Mode
+
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+Some text with a span element with a vertical writing-mode.
+
+The following example shows some different writing modes:
+
+p.test1{
+writing-mode: horizontal-tb;
+
+
+}
+
+p.test2{
+writing-mode: vertical-rl;
+}
+
+
+CSS 2D Transforms
+
+CSS transforms allow you to move, rotate, scale and skew elements.
+
+In this chapter you will learn about the following CSS property:
+transform.
+
+
+CSS 2D Transforms Methods
+
+with the css transform property you can use the following 2D  transformation methods:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+
+The translate() Method
+
+The translate() method moves an element from its current position(according to the parameters given for the X-axis and Y-axis).

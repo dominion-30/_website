@@ -1,132 +1,65 @@
-h1{
-    margin-bottom:0 ;
+/*Cards Styling*/
+.container{
+    width: 100%;
+    
+    
 }
-.hero-image{
-    margin-top: 0;
-    background-image: url(../img/img_middle.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    position: relative;
-    background-clip:content-box;
-    padding: 0.5em;
-    border:0.2em dotted yellow
+.pack{
+    width: 50%;
+    height: auto;
+ box-shadow: 10px 10px black ;
+}
+.number{
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    background-color: rgb(77, 134, 77);
+    border: 1px solid gray;
+    
 }
 div{
-    margin-top: 2em;
-    width: 50em;
-    height: 25em;
+    text-align: center;
     
-    
+    height: auto;
+    height: auto;
+    background-size: cover;
+    box-sizing: border-box;
+   
 }
-.color1{
-    background-color: hsl(360, 100%, 50%);
-    background-color: transparent;
+.note{
+    border: 1px solid gray;
+    color: black;
 }
-
-.color2{
-    background-image: linear-gradient(  black, white);
-    border: 0.2em solid black;
-}
-.color3{
-    background-color: rgba(255, 0, 0, 0.6);
-}
-
-.color4{
-    background-color: rgba(255, 0, 0, 0.8);
-}
-
-.color5{
-    background-color: rgba(255, 0, 0, 1);
-}
-.check{
-    width: 50em;
-    height: 25em;
-    
-    border: 0.2em dotted currentColor;
+.test1{
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid black;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1em;
+    height: 50em;
+   
 }
 p{
-    color:green;
-    border: 0.2em solid yellow;
+    word-break: break-all;
+}
+p.test1:hover{
+    overflow: visible;
+ 
 }
 
-em{
-    border:inherit;
+.test{
+   
+    height: 5em;
+    width: 15em;
+    background-color: blue;
 }
 
-.color-media{
-    background-image: repeating-linear-gradient(to right, rgba(215,180,12,0.5), rgba(100,50,20,0.6));
-}
-
-.color-media2{
-    background-image:linear-gradient(to bottom, red,yellow,green,orange,purple,black)
-}
-.use-of-angle{
-    border: 0.2em solid;
-    width: 50em;
-    height: 25em;
-    background-image: repeating-linear-gradient(green , white 20%, green 10%);
-
-}
-
-.media-radial{
-    width: 50em;
-    height: 25em;
-    background-image: radial-gradient(red, yellow, green);
-}
-
-.media-radial img{
-    margin:auto;
-    display: block;
-    padding: 3em 0;
-}
-
-.media-radial2{
-    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
-}
-
-.media-radial3{
-    background-image: repeating-radial-gradient(farthest-corner at 30% 40%, red, yellow, black);
-    box-shadow: 10px 10px 20px  coral  ;
-} 
-
-.media-radial4{
-    background-image: conic-gradient(yellow, red, green);
-
-}
-
-.media-radial5{
-    background-image: conic-gradient(blue,green,yellow, orange,black);
-}
-
-.media-radial6{
-    background-image:conic-gradient(red 45deg, yellow 90deg, green 225deg);
-    border-radius: 30%;
-}
-
-h2{
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 2px 2px rgba(25, 200, 133, 0.3);
+.test2{
+    height: 3em;
+    width: 9em;
+    transform:translate(500px, 25px);
     background-color: yellow;
-}
-p{  color: black;
-    text-shadow: 3px 4px 10px green;
-    background-color: white;
-    font-size: 2em;
-    font-weight: bold;
-    
-
-}
-
-.paragraph{
-    text-shadow: 0 0 3px #ff0000;
-    color: green;
-}
-
-.paragraph2{
-    text-shadow:0 0 3px #ff0000, 0 0 5px #0000ff;
-}
-.shadow{
-    box-shadow: 10px 10px;;
 }
