@@ -25,7 +25,8 @@ div{
 }
 
 .color2{
-    background-color: rgba(255, 0, 0, 0.4);
+    background-image: linear-gradient(  black, white);
+    border: 0.2em solid black;
 }
 .color3{
     background-color: rgba(255, 0, 0, 0.6);
@@ -37,4 +38,95 @@ div{
 
 .color5{
     background-color: rgba(255, 0, 0, 1);
+}
+.check{
+    width: 50em;
+    height: 25em;
+    
+    border: 0.2em dotted currentColor;
+}
+p{
+    color:green;
+    border: 0.2em solid yellow;
+}
+
+em{
+    border:inherit;
+}
+
+.color-media{
+    background-image: repeating-linear-gradient(to right, rgba(215,180,12,0.5), rgba(100,50,20,0.6));
+}
+
+.color-media2{
+    background-image:linear-gradient(to bottom, red,yellow,green,orange,purple,black)
+}
+.use-of-angle{
+    border: 0.2em solid;
+    width: 50em;
+    height: 25em;
+    background-image: repeating-linear-gradient(green , white 20%, green 10%);
+
+}
+
+.media-radial{
+    width: 50em;
+    height: 25em;
+    background-image: radial-gradient(red, yellow, green);
+}
+
+.media-radial img{
+    margin:auto;
+    display: block;
+    padding: 3em 0;
+}
+
+.media-radial2{
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+
+.media-radial3{
+    background-image: repeating-radial-gradient(farthest-corner at 30% 40%, red, yellow, black);
+    box-shadow: 10px 10px 20px  coral  ;
+} 
+
+.media-radial4{
+    background-image: conic-gradient(yellow, red, green);
+
+}
+
+.media-radial5{
+    background-image: conic-gradient(blue,green,yellow, orange,black);
+}
+
+.media-radial6{
+    background-image:conic-gradient(red 45deg, yellow 90deg, green 225deg);
+    border-radius: 30%;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(25, 200, 133, 0.3);
+    background-color: yellow;
+}
+p{  color: black;
+    text-shadow: 3px 4px 10px green;
+    background-color: white;
+    font-size: 2em;
+    font-weight: bold;
+    
+
+}
+
+.paragraph{
+    text-shadow: 0 0 3px #ff0000;
+    color: green;
+}
+
+.paragraph2{
+    text-shadow:0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+.shadow{
+    box-shadow: 10px 10px;;
 }
