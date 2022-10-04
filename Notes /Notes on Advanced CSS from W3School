@@ -716,3 +716,31 @@ The matrix() Method
 The matrix() method combines all the 2D transform methods into one.
 
 The matrix() method take six parameters, containing mathematic functions, which allow you to rotate, scale, move(translate), and skew elements.
+
+The parameters are as follow: matrix(scaleX(), SkewY(), SkewX(), ScaleY(),translateX(), translateY())
+
+
+CSS 3D Transforms
+
+CSS also supports 3D transformations.
+
+In this chapter you will learn about the following CSS property:
+
+transform
+
+
+CSS 3D Transforms Methods
+
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+rotateY()
+rotateZ()
+
+The rotateX() Method
+
+div{
+transform: rotateX(150deg);
+}
+
+The rotateX() method rotates an element around its X-axis at a given degree. Same as rotateY() and rotateZ()

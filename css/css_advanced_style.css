@@ -12,6 +12,7 @@
     width: 25%;
     height: 10em;
     margin: 5em;
+   
     
 }
 .box{
@@ -19,6 +20,21 @@
 }
 
 .item:hover{
-    transform: rotate(20deg);
+    transform: rotate(120deg);
     
+}
+
+.thing{
+    width:25% ;
+    height: 5em;
+    background-color: green;
+    display: inline-block;
+    margin: 2em;
+    
+
+
+}
+
+.thing:hover{
+    transform:rotateZ(-150deg);
 }
