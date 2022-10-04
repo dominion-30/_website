@@ -1,65 +1,24 @@
-/*Cards Styling*/
 .container{
     width: 100%;
-    
-    
 }
-.pack{
+.box{
     width: 50%;
-    height: auto;
- box-shadow: 10px 10px black ;
-}
-.number{
-    text-align: center;
-    font-size: 5em;
-    color: white;
-    background-color: rgb(77, 134, 77);
-    border: 1px solid gray;
-    
-}
-div{
-    text-align: center;
-    
-    height: auto;
-    height: auto;
-    background-size: cover;
-    box-sizing: border-box;
-   
-}
-.note{
-    border: 1px solid gray;
-    color: black;
-}
-.test1{
-    writing-mode: vertical-lr;
-    white-space: nowrap;
-    width: 200px;
-    border: 1px solid black;
-  
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 1em;
-    height: 50em;
-   
-}
-p{
-    word-break: break-all;
-}
-p.test1:hover{
-    overflow: visible;
- 
-}
-
-.test{
-   
-    height: 5em;
-    width: 15em;
     background-color: blue;
+    height: 25em;
+    
+}
+.item{
+    background-color: yellow;
+    width: 25%;
+    height: 10em;
+    margin: 5em;
+    
+}
+.box{
+    border: 0.1em solid black;
 }
 
-.test2{
-    height: 3em;
-    width: 9em;
-    transform:translate(500px, 25px);
-    background-color: yellow;
+.item:hover{
+    transform: rotate(20deg);
+    
 }
