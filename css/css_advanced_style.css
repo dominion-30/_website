@@ -1,40 +1,30 @@
 .container{
     width: 100%;
 }
-.box{
-    width: 50%;
-    background-color: blue;
-    height: 25em;
-    
-}
-.item{
-    background-color: yellow;
-    width: 25%;
-    height: 10em;
-    margin: 5em;
-   
-    
-}
-.box{
-    border: 0.1em solid black;
-}
 
-.item:hover{
-    transform: rotate(120deg);
+.box{
+    border: 0.1em solid gray;
+    background-color: aquamarine;
     
-}
-
-.thing{
-    width:25% ;
-    height: 5em;
-    background-color: green;
     display: inline-block;
-    margin: 2em;
-    
+    padding: 0.05em;
+    width: 4%;
+    height: auto;
+    border-radius: 0.2em;
+}
 
+.box:hover{
+    width: 15%;
+    height: auto;
+    color: white;
+    font-size: 2em;
+    background-color: rgb(130, 130, 223);
+    transition: width 2s;
 
 }
 
-.thing:hover{
-    transform:rotateZ(-150deg);
+p{
+    text-transform: uppercase;
+    text-align: center;
+
 }
