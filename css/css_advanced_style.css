@@ -52,6 +52,39 @@
     transform: rotate(180deg);
 }
 
+div{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    animation-name: color-change;
+    animation-duration: 4s;
+}
+
+@keyframes color-change{
+    0%{background-color: black;}
+    10%{background-color: aquamarine;}
+    20%{background-color: burlywood;}
+    30%{background-color: yellow;}
+    40%{background-color: cornflowerblue;}
+    50%{background-color: violet;}
+    60%{background-color: tomato;}
+    70%{background-color: chartreuse;}
+    80%{background-color: darkblue;}
+    90%{background-color: slategrey;}
+    100%{background-color:white};
+}
+/* @keyframes example{
+    from {background-color:red;}
+    to{background-color:yellow;}
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 1s;
+} */
 
 
 
