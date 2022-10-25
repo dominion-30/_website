@@ -901,8 +901,7 @@ transition-delay:1s;
 
 CSS Animations
 
-CSS allows animation of HTML elements without using Javascript or Flash
-
+CSS allows animation of HTML elements without using Javascript or Flash!
 
 In this chapter you will learn about the following properties:
 
@@ -918,40 +917,265 @@ animation
 
 What are CSS Animations?
 
-An animation lets an element gradually change from one style to another.
-
-You can change as many CSS properties you want, as many times as you want.
+An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times as you want.
 
 To use CSS animation, you must first specify some keyframes for the animation.
 
-Keyframes hold what styles the element will have at certain times
+Keyframes hold what styles the element will have at certain times.
 
 
 The @keyframes Rule
 
-When you specify CSS styles insides the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
 
 To get an animation to work, you must bind the animation to an element.
 
-The following example binds the "example" animation to the <div> element. The animation will last for 4 seconds, and it will gradually change the background-color of the div <div> element from "red" to "yellow".
 
-/*the animation code*/
-@keyframes example{
-from {background-color:red;}
-to{background-color:yellow;}
+The following example binds the "example" animation to the <div> element. The animation will last for 4 seconds, and it will gradually change the background-color of the <div> element from "red" to "yellow"
 
+/* The animation code*/
+
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
 
 /* The element to apply the animation to */
+
+div {
+	width: 100px;
+	height: 100px;
+	background-color:red;
+	animation-name: example;
+	animation-duration: 4s;
+
+}
+
+
+Note: The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (o seconds)
+
+In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete).[
+
+
+It is also possible to use percent. By using percentm you can add as many style changes as you like.
+
+The following example will change the background-color of the <div> element when the animation is 25% complete, 50% complete and again when the animation is 100% complete.
+
+
+Delay an Animation
+
+The animation-delay property specifies a delay for the start of an animation.
+
+The following example has a 2 seconds delay before starting the animation:
+@keyframe box{
+from{ background-color: yellow;}
+to{background-color:red;}
+}
+
+div{
+width: 100px;
+height: 100px;
+background-color: red;
+animation-name: box;
+animation-duration:4s
+animation-delay:2s;
+}
+
+
+Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds
+
+div{
+width: 100px;
+height: 100px;
+position:relative;
+background-color:red;
+animation-name:box;
+animation-duration:4s
+animation-delay:-2s;
+}
+
+
+Set How Many Times an Animation Should Run
+
+The animation-iteration-count property specifies the number of times an animation should run.
+
+The following example will run the animation 3 times before it stops:
+
 div{
 width: 100px;
 height: 100px;
 background-color:red;
-animation-name:example;
-animation-duration: 4s
+animation-name:box;
+animation-duration:4s;
+animation-delay:2s;
+animation-iteration-count:3;
 }
 
-Note: The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s.
+The following example uses the value "infinite" to make the animation continue for ever:
 
-In the example above we have specified when the style will change by using the keyword "from" and "to" (which represents 0% (start) and 100% (complete).
+div{
+width: 100px;
+height: 100px;
+position:relative;
+background-color:red;
+animation-name:box;
+animation-duration:4s;
+animation-delay:2s;
+animation-iteration-count:infinite;
+}
 
-It is also possible to use percent. By using percent, you can add as many style changes as you like.
+
+Run Animation in Reverse Direction or Alternate Cycles
+
+The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+
+The animation-direction property can have the following values:
+
+normal: The animation is played as normal(forwards). This is default.
+
+reverse: The animation is played in reverse direction (backwards)
+
+alternate: The animation is played forwords first, then backwards.
+
+alternate-reverse: The animation is played backward first, then forwards.
+
+
+div{
+
+width:100px;
+height:100px;
+position:relative;
+background-color:red;
+animation-name:box;
+animation-duration:4s;
+animation-direction:reverse;
+}
+
+
+Specify the Speed Curve of the Animation
+
+The animation-timing-function property specifies the speed curve of the animation.
+
+The animation-timing-function property can have the following values:
+
+ease: specifies an animation with a slow start, then fast, then end slowly (this is default)
+
+linear: specifies an animation with the same speed from start to end.
+
+ease-in: specifies an animation with a slow start.
+
+ease-out: specifies an animation with a slow end
+
+ease-in-out specifies an animation with a slow start and end.
+
+cubic-bezier(n,n,n,n)- Lets you define your own values in a cubic-bezier function.
+
+
+#div1{
+animation-timing-function:linear;
+} 
+
+#div2{
+animation-timing-function:ease;
+}
+
+
+#div3{
+animation-timing-function:ease-in;
+}
+
+#div4{
+animation-timing-function:ease-out;
+}
+
+#div5{
+animation-timing-function:ease-in-out;
+}
+
+
+Specify the fill-mode for an Animation
+
+CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animationn-fill-mode property can override this behavior.
+
+
+The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+
+
+The animation-fill-mode property can have the following values:
+
+none: Default value. Animation will not apply any styles to the element before or after it is executing.
+
+forwards: The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+
+backwards: The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period.
+
+both: The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions. 
+
+
+
+CSS Tooltip
+
+Demo: Tooltip Examples
+
+A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element.
+
+
+ Basic Tooltip
+ 
+ Create a tooltip that appears when the user moves the mouse over an element:
+ 
+ <style>
+ /* Tooltip container */
+ .tooltip{
+ position:relative;
+ display:inline-block;
+ border-bottom: 1px dotted black; /* if you want dots under the hoverable text*/
+ 
+ /* Tooltip text */
+ 
+ .tooltip  .tooltiptext {
+ 
+ visibility:hidden;
+ width: 120px;
+ background-color:black;
+ color:#fff;
+ text-align:center;
+ padding:5px 0;
+ border-radius: 6px;
+ 
+ } 
+ }
+ 
+ 
+ Basic Tooltip
+ 
+ Create a tooltip that appears when the user moves the mouse over an element:
+ 
+ 
+ Example Explained
+ 
+ HTML: Use a container element (like <div>) and add the "tooltip" class to it. When the user mouse over this <div>, it will show the tooltip text.
+ 
+ The tooltip text is placed inside an inline element (like <span>) with class="tooltiptext"
+ 
+ 
+ CSS: The tooltip class use position:relative, which is needed to position the tooltip text (position:absolute). Note:See examples below on how to position the tooltip.
+ 
+ 
+ The tooltiptext class holds the actual tooltip text. It is hidden by default, and will be visible on hover (see below). We have also added some basic styles to it: 120px width, black background color, white text color, centered text, and 5px top and bottom padding.
+ 
+ 
+ 
+The CSS border-radius property is used to add rounded corners to the tooltip text.
+
+The :hover selector is used to show the tooltip text when the user moves the mouse over the <div> with class="tooltip"
+
+
+Positioning Tooltips
+
+
+CSS Styling Images
+
+
+Rounded images
+Use the border-radius property to create rounded images.

@@ -1,0 +1,13 @@
+
+.style_image{
+    
+    border-radius: 0.2em;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    
+}
+
+.style_image :hover{
+    border: 0.2em solid #74AD24;
+}

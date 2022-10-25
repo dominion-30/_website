@@ -1,0 +1,91 @@
+CSS- The position property
+
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+
+The position Property
+
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+Static
+Relative
+Fixed 
+Absolute
+Sticky
+
+
+Elements are then positioned using top, bottom, left and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+position:static;
+
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+<div>
+<p>This <div> element has position:static;</p>
+</div>
+
+div{
+position:static;
+border: 0.1em solid #73AD21;
+} 
+
+
+position:relative
+
+An element with position:relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+div{
+position:relative;
+left: 30px;
+border: 0.2em solid #73AD21;
+}
+
+
+position:fixed;
+
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page.
+
+div{
+position:fixed;
+border:0.1em solid green;
+background-color:green;
+right:0px;
+bottom: 0px;
+width:300px;
+
+
+}
+
+
+Position: absolute;
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed)
+
+However, if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+
+
+CSS Layout- The z-index property.
+
+The z-index property specifies the stack order of an element.
+
+
+The z-index property
+
+When elements are positioned, they can overlap other elements.
+
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others)
+
+An element can have positive or negative stack order.

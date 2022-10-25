@@ -57,7 +57,9 @@ div{
     height: 50%;
     background-color: black;
     animation-name: color-change;
-    animation-duration: 4s;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes color-change{
